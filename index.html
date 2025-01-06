@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+
+    <body>
+    <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="travel_logo.jpg" alt="Travel Pat Logo" style="width: 40px; height: 40px;">
+      </div>
+      <div class="logo">TravelPat</div>
+      <ul class="nav-links">
+          <li><a href="#" onclick="home()">Home</a></li>
+          <li><a href="#" onclick="aboutUs()">About Us</a></li>
+          <li><a href="#" onclick="contactUs()">Contact Us</a></li>
+      </ul>
+      <div class="search-container">
+          <input id="searchText" type="text" placeholder="Enter a destination or keyword">
+          <button class="search-button" id="search-button">Search</button>
+          <button class="clear-button" id="clear-button">Clear</button>
+      </div>
+      </nav>
+    </header>
+    <main>
+        <div class="main-content" style="
+        aspect-ratio: 1;
+        background-image: url('travel2_image.png'); 
+        background-position: center; /* Center the image horizontally and vertically */ 
+        background-repeat: no-repeat;
+        background-size: contain;">
+            <!-- Rest of your HTML content here -->
+            <div class="social-media">
+                <ul class="transparency" style="list-style-type: none;">
+                    <li style="padding:10px"><a href="#"> <hr class="vertical_line"></a></li>
+                    <li style="padding:10px"><a href="#"> <img src="facebook_icon.png" class="icon-social-media"></a></li>
+                    <li style="padding:10px"><a href="#"><img src="x_icon.png" class="icon-social-media"></a></li>
+                    <li style="padding:10px"><a href="#"><img src="instagram_icon.png" class="icon-social-media"></a></li>
+                </ul>
+            </div>
+            <div class="content" id="content">
+                <!-- Show the content here -->       
+            </div>
+            <div class="searchResult" id="searchResult">   
+                <!-- Show Search Result here  -->
+            </div>
+        </div>
+    </main>
+    
+  </div>
+<script src="./travel_recommendation.js"></script>
+</body>
